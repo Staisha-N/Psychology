@@ -1,0 +1,55 @@
+/*Style de présentation du titre principal: "Psychologie de la mémoire". */
+h1 {
+    font-family: Perpetua, Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    box-shadow: 5px 5px 0 #274855;
+    border-color: rgb(39, 72, 85);
+    padding: 20px;
+    background-image: url(arriere_plan.jpg);
+    text-shadow: 2px 2px 2px #888;
+    border-radius: 25px; 
+}
+
+/*Style des sous-titres: "Introduction", "Types de mémoires" et "Bibliographie". */
+h2 {
+    font-family: Perpetua, Arial, sans-serif;
+    margin: auto;
+    text-decoration: none;  
+    color: #274855;
+}
+
+/*Ce code sert à mettre l'icône du cerveau à côté des trois sous-titres. */
+.sous-titre1 {
+    display: inline-block;  
+}
+
+.sous-titre2 {
+    display: inline-block;  
+}
+
+.sous-titre3 {
+    display: inline-block;  
+}
+
+/*Style du bouton pour réinitialiser les réponses.*/
+button {
+    color: rgb(147, 98, 42);  
+}
+
+/*Syle des paragraphes*/
+body {
+    background-color: rgba(211, 161, 93, 0.5);
+    margin: 20px;
+}
+
+/*Style de la note en bas de page indiquant mon nom et la date de création de la page.*/
+h4 {
+    font-style: italic;
+    color: rgba(88, 88, 88, 0.6);
+    background: rgba(159, 119, 74, 0.52);
+    margin: 0px;
+    width: 100%;
+}

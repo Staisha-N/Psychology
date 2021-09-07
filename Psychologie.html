@@ -1,0 +1,156 @@
+<!--
+*Travail : Évaluation HTML/CSS/Javascript
+*Programmeuse : Staisha Neville
+*Date : avril 2021
+*But : création d'un site web sur un de mes intérêts
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <!--Titre qui apparaît sur l'onglet de la page et icône-->
+        <title>Psychologie</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="icon.png">
+        
+        <!--Référence à la page CSS-->
+        <link rel="stylesheet" type="text/css" href="style_Psychologie.css">
+    </head>
+    
+    <body>
+        <!--Titre principal-->
+        <h1>Psychologie de la mémoire</h1>
+        <br>
+        <br>
+        
+        <!--Premier sous-titre-->
+        <div class="sous-titre1">
+            <h2>Introduction</h2>
+        </div>
+
+        <!--Icône du cerveau à côté du sous-titre-->
+        <div class="sous-titre1">
+            <img src = "cerveau.png" width=40px height=30px  alt= "Illustration d'un cerveau"/>
+        </div>
+        
+        <!--Paragraphe d'introduction-->
+                <p>La mémoire est un concept vaste et complexe. Les experts postulent des théories et créent des modèles dans l'objectif d'améliorer notre compréhension de la mémoire, mais il reste beaucoup à découvrir.</p>
+        <br>  
+            <!--Deuxième sous-titre-->
+            <div class="sous-titre2">
+            <h2>Types de mémoires</h2>
+            </div>
+            
+            <!--Icône du cerveau à côté du sous-titre-->
+            <div class="sous-titre2">
+            <img src = "cerveau.png" width=40px height=30px  alt= "Illustration d'un cerveau"/>
+            </div>
+        
+            <!--Paragraphes d'explication des types de mémoires-->
+                <p>Il existe quatre types de mémoires :
+                    <ul>
+                        <li>La mémoire sémantique</li>
+                        <li>La mémoire épisodique</li>
+                        <li>La mémoire de procédure</li>
+                        <li>La mémoire émotionnelle</li>
+                    </ul>
+                En premier lieu, la mémoire <b>sémantique</b> est une connaissance générale d'un fait. Par exemple, que le ciel est bleu. D'autre part, la mémoire <b>épisodique</b> est le souvenir d'une expérience personnelle, comme ta fête d'anniversaire lorsque tu avais 13 ans. La mémoire sémantique et la mémoire épisodique sont tous les deux des mémoires explicites, c'est-à-dire des connaissances qu'une personne peut facilement expliquer aux autres.</p> 
+    
+                <p>À l'opposé, les mémoires implicites sont difficiles à expliquer. Par exemple, une mémoire de <b>procédure</b> (comme jouer le piano) ne se transmet pas par des mots. Il faut apprendre à jouer en pratiquant l'instrument lui-même. Similairement, une mémoire <b>émotionnelle</b> est ressentie, mais difficile à exprimer en mots. Elle est alors classée en tant que mémoire implicite. C'est la façon que tu te sens face à une situation ou à une personne spécifique.</p>
+            
+            <!--Diagramme des types de mémoires-->
+            <img src = "diagramme_memoire.png" width=500px height=350px alt= "Diagramme des types de mémoires"/>
+            
+            <h3>Pratique</h3>
+                <p>Instruction : Lis chaque mise en situation et sélectionne le type de mémoire qui y correspond.</p>
+                <ol> 
+                    <li>
+                        <!--Premier choix multiple-->
+                        <p>En prenant un test, tu te souviens du fait que la formule chimique de l'eau est H2O.</p>
+                        <form action="/action_page.php">
+                       
+                        <!--Quatre boutons de choix de type "radio button"-->
+                        <input type="radio" name="choix_memoire" onclick="myFunction(this.value)" value="vraie">Une mémoire sémantique<br>
+            
+                        <input type="radio" name="choix_memoire" onclick="myFunction(this.value)" value="fausse">Une mémoire épisodique<br>
+            
+                        <input type="radio" name="choix_memoire" onclick="myFunction(this.value)"  value= "fausse">Une mémoire de procédure<br>
+                        
+                        <input type="radio" name="choix_memoire" onclick="myFunction(this.value)"  value= "fausse">Une mémoire émotionnelle<br>
+            
+                        <!--Afficher si la réponse de l'utilisateur est vraie ou fausse-->
+                        <p>Ta réponse est: <input type="text" id="correction">  </p> 
+                        </form>
+    
+                        <!--Référence au Javascript-->
+                        <script src = "script_Psychologie.js"></script>
+                    </li>
+                        
+                    <li>
+                        <!--Deuxième choix multiple-->
+                        <p>Quand tu rentres chez toi après une longue journée au travail, ton chien adorable t'accueille en remuant la queue. Tu te sens alors heureux et calme.</p>
+                        <form action="/action_page.php">
+                       
+                        <input type="radio" name="choix_memoire2" onclick="myFunction2(this.value)" value="fausse">Une mémoire sémantique<br>
+            
+                        <input type="radio" name="choix_memoire2" onclick="myFunction2(this.value)" value="fausse">Une mémoire épisodique<br>
+            
+                        <input type="radio" name="choix_memoire2" onclick="myFunction2(this.value)"  value= "fausse">Une mémoire de procédure<br>
+                        
+                        <input type="radio" name="choix_memoire2" onclick="myFunction2(this.value)"  value= "vraie">Une mémoire émotionnelle<br>
+        
+                        <p>Ta réponse est: <input type="text" id="correction2">  </p> 
+        
+                        </form>
+    
+                        <script src = "script_Psychologie.js"></script>
+                    </li>
+                    
+                    <li>
+                        <!--Troisième choix multiple-->
+                        <p>Quand tu étais un enfant, tu te promenais souvent en bicyclette. Durant quelques années, tu décides de faire partie de l'armée canadienne, puis tu ne fais plus de vélo. À ton retour, tu n'as aucun problème à te souvenir comment faire cette activité.</p>
+                        <form action="/action_page.php">
+                       
+                        <input type="radio" name="choix_memoire3" onclick="myFunction3(this.value)" value="fausse">Une mémoire sémantique<br>
+            
+                        <input type="radio" name="choix_memoire3" onclick="myFunction3(this.value)" value="fausse">Une mémoire épisodique<br>
+            
+                        <input type="radio" name="choix_memoire3" onclick="myFunction3(this.value)"  value= "vraie">Une mémoire de procédure<br>
+                        
+                        <input type="radio" name="choix_memoire3" onclick="myFunction3(this.value)"  value= "fausse">Une mémoire émotionnelle<br>
+   
+                        <p>Ta réponse est: <input type="text" id="correction3">  </p> 
+        
+                        </form>
+    
+                        <script src = "script_Psychologie.js"></script>
+                    </li>
+                 </ol>
+                    
+                <!--Bouton permettant d'effacer les réponses aux choix multiples.-->
+                <button type="submit" onClick="refreshPage()">Réinitialiser les réponses</button>
+                <br>
+                <br>
+                <script src = "script_Psychologie.js"></script>
+            <br>
+            <br>
+    
+        <!--Troisième sous-titre-->
+        <div class="sous-titre3">
+        <h2>Bibliographie</h2>
+        </div>
+        
+        <!--Icône du cerveau à côté du sous-titre-->
+        <div class="sous-titre3">
+            <img src = "cerveau.png" width=40px height=30px  alt= "Illustration d'un cerveau"/>
+            </div>
+    
+        <!--Paragraphe de référence bibliographique-->
+            <p>Meloche, C. (2020). <i>Psychologie HHG4MI-11</i>. Recueil inédit, CCFO.</p>
+    
+        <br>
+        <br>
+        <!--Note en bas de page indiquant l'auteur et la date de création du site web.-->
+            <h4>Site web crée par Staisha Neville --- avril 2021</h4>
+    </body>
+</html>
